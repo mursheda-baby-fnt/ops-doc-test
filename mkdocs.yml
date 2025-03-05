@@ -1,4 +1,5 @@
 site_name: "FNT Operations Manual"
+site_url: https://operations.org/fntsite
 theme:
   name: material
 nav:
