@@ -1,5 +1,20 @@
 site_name: "FNT Operations Manual"
 theme:
   name: material
+  # features:
+  #   - content.action.share
+  #   - content.action.export
+
 nav:
   - Home: index.md
+  - Intro: intro.md
+  
+# plugins:
+#   - search  # Enables search functionality
+#   - pdf-export  # Enables PDF export option
+
+extra_javascript:
+  - overrides/extra.js
+
+extra_css:
+  - overrides/print.css
