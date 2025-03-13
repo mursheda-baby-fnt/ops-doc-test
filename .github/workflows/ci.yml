@@ -25,7 +25,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
+
+      - name: Fetch latest changes from remote
+        run: |
+          git fetch origin gh-pages
+
       - name: Deploy Documentation
         run: mike deploy v1.0 latest --push
 
