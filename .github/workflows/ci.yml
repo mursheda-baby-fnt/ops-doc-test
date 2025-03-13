@@ -31,7 +31,7 @@ jobs:
           git fetch origin gh-pages
 
       - name: Deploy Documentation
-        run: mike deploy v2.0 latest --push
+        run: mike deploy v2.0 --push
 
       - name: Set Default Version
         run: |
