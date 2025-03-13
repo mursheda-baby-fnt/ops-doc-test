@@ -1,16 +1,11 @@
 @media print {
-    /* Hide the Export to PDF button in print mode */
     button {
         display: none !important;
     }
-
-    /* Adjust page layout for better readability */
     body {
         font-size: 14pt;
         line-height: 1.5;
     }
-
-    /* Remove background colors to save ink */
     * {
         background: none !important;
         color: black !important;

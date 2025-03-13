@@ -20,7 +20,14 @@ jobs:
           python-version: "3.9"
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install mike mkdocs-material
+      
+      - name: Deploy Documentation
+        run: mike deploy v1.0 latest --push
 
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+      - name: Set Default Version
+        run: |
+          mike set-default latest --push
+
+      # - name: Deploy to GitHub Pages
+      #   run: mkdocs gh-deploy --force

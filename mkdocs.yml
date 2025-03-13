@@ -1,7 +1,23 @@
 site_name: "FNT Operations Manual"
 theme:
   name: material
-  # features:
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - version
   #   - content.action.share
   #   - content.action.export
 
@@ -18,3 +34,7 @@ extra_javascript:
 
 extra_css:
   - overrides/print.css
+
+extra:
+  version:
+    provider: mike
