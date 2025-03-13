@@ -24,6 +24,8 @@ theme:
 nav:
   - Home: index.md
   - Intro: intro.md
+  - Development: dev.md
+  - Testing: test.md
   
 # plugins:
 #   - search  # Enables search functionality
