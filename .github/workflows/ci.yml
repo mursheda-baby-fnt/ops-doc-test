@@ -30,12 +30,24 @@ jobs:
         run: |
           git fetch origin gh-pages
 
+      # - name: Delete version 1.0
+      #   run: |
+      #     mike remove v1.0 --push
+      
+      # - name: Rename version 2.0 to 1.0
+      #   run: |
+      #     mike rename v2.0 v1.0 --push
+
       - name: Deploy Documentation
         run: mike deploy v2.0 --push
 
       - name: Set Default Version
         run: |
           mike set-default latest --push
+      
+      # - name: Set version 1.0 as default
+      #   run: |
+      #     mike set-default v1.0 --push      
 
       # - name: Deploy to GitHub Pages
       #   run: mkdocs gh-deploy --force
