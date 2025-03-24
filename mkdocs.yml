@@ -27,6 +27,7 @@ nav:
   - Development: dev.md
   - Testing: test.md
   - installation: install.md
+  - version 1.9.0: version.md
   
 # plugins:
 #   - search  # Enables search functionality
