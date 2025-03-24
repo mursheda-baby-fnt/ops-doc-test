@@ -38,6 +38,6 @@ extra_javascript:
 extra_css:
   - overrides/print.css
 
-# extra:
-#   version:
-#     provider: mike
+extra:
+  version:
+    provider: mike
