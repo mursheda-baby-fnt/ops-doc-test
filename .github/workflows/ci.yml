@@ -5,6 +5,11 @@ on:
       - 'v*'
     # branches:
     #   - main
+
+concurrency:
+  group: "pages-deploy"
+  cancel-in-progress: true
+  
 permissions:
   contents: write
 jobs:
