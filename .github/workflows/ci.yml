@@ -49,7 +49,7 @@ jobs:
 
       - name: Set Default Version to latest
         run: |
-          mike set-default $VERSION --push
+          mike set-default v1.3.0 --push
       
       # - name: Set version 1.0 as default
       #   run: |
