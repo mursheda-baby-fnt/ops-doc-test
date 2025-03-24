@@ -26,6 +26,7 @@ nav:
   - Intro: intro.md
   - Development: dev.md
   - Testing: test.md
+  - installation: install.md
   
 # plugins:
 #   - search  # Enables search functionality
