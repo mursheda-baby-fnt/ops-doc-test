@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 on:
   push:
+    tags:
+      - 'v*'
     branches:
       - main
 permissions:
@@ -39,9 +41,13 @@ jobs:
       #     mike rename v2.0 v1.0 --push
 
       - name: Deploy Documentation
-        run: mike deploy v2.0 --push
+        # run: mike deploy v2.0 --push
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}  # Extract version from the Git tag (e.g., 'v1.0.0')
+          echo "Deploying version $VERSION"
+          mike deploy $VERSION --push
 
-      - name: Set Default Version
+      - name: Set Default Version to latest
         run: |
           mike set-default latest --push
       

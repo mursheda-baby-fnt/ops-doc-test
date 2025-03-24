@@ -4,14 +4,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: green
+      primary: pink
       accent: light green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: green
+      primary: pink
       accent: light green
       toggle:
         icon: material/brightness-7
@@ -37,6 +37,6 @@ extra_javascript:
 extra_css:
   - overrides/print.css
 
-extra:
-  version:
-    provider: mike
+# extra:
+#   version:
+#     provider: mike
