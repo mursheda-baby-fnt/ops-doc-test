@@ -46,10 +46,11 @@ jobs:
           VERSION=${GITHUB_REF#refs/tags/}  # Extract version from the Git tag (e.g., 'v1.0.0')
           echo "Deploying version $VERSION"
           mike deploy $VERSION --push
+          mike alias $VERSION latest --push
 
       - name: Set Default Version to latest
         run: |
-          mike set-default v1.3.0 --push
+          mike set-default latest --push
       
       # - name: Set version 1.0 as default
       #   run: |
